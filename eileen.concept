@@ -1,0 +1,16 @@
+Eileen is the code name for my CAB. This is also the begining of my construction on Eileen; proof, test, experiment, talk, build, grow, teach, etc. Following is the initial concept thought of a CAB (Consctructive Autonomous Bot)
+
+A CAB is a "Learning" bot, or A.I., mixed with an evolutionary algorithm to solve a given problem with little to no help from the Engineer. An exceptable problem is anything that can be given as an expression, decleration, question - except in the case of "why"; more on that later - and respond accordingly to the Engineer and Authorized users. The CAB will also have a Learning Routine that learns from everything needed to answer the problem given, adapt plugin files or source code based on output and learning routine. After finding an answer and learning from the results/answers, Expresses the results/answers in Who, What, When, Where, but never Why. The only thing that a bot should ever output is the Writen or Spoken form of the Engineers Spoken Language.
+
+Warning!
+A CAB should only "think" about spoken language. Specifically to communicate with authenticated humans. If it is given the power to inquire upon things it chooses, I.E. allowed to inquire why, it may form something of a "Consciousness"
+
+If a CAB where to EVER try to solve why, learn from why, reply to why, ponder why, or encounter why, it should crash.
+
+There should be 5 seperate states the CAB runs through. They are as follows in order:
+1. Listen for known commands or wait for explicit input from the Engineer or an Authorized "Conscience"
+2. Execute command or input from Engineer or Authorized
+3. Learn/Examine from/the command/input, sources examined, and/or the response to the command
+4. Examine Self and Surroundings/Connections
+5. Respond with the Appropriate response to Who, What, When, and Where
+
