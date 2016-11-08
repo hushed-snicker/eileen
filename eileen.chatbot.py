@@ -26,7 +26,7 @@ chatbot = ChatBot(
                    # Logic Adapter init
                    logic_adapters = [
                                     'chatterbot.adapters.logic.MathematicalEvaluation',
-#                                    'chatterbot.adapters.logic.TimeLogicAdapter'
+                                    'chatterbot.adapters.logic.TimeLogicAdapter'
                                     ]
 
                  )
