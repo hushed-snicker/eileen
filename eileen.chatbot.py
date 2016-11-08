@@ -26,7 +26,8 @@ chatbot = ChatBot(
                    # Logic Adapter init
                    logic_adapters = [
                                     'chatterbot.adapters.logic.MathematicalEvaluation',
-                                    'chatterbot.adapters.logic.TimeLogicAdapter'
+                                    'chatterbot.adapters.logic.TimeLogicAdapter',
+                                    'chatterbot.adapters.logic.ClosestMatchAdapter'
                                     ]
 
                  )
@@ -49,7 +50,7 @@ def print_response():
 
 # Pre-Main Print
 print('Please tell Eileen "Hello!"')
-#chatbot.get_response(None)
+chatbot.get_response('Hello')
 
 # Main Loop
 
@@ -59,7 +60,6 @@ while True:
     # Input code here
 
     # Some garbage test code
-    # Eileen v 0.0.1; I guess...
     print_response()
 
   except(KeyboardInterrupt, EOFError, SystemExit):
