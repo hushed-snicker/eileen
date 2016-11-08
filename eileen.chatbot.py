@@ -14,19 +14,19 @@ chatbot = ChatBot(
 
                    # Storage Adapter init
 
-                   storage_adapter = 'chatterbot.adapters.storage.jsonfile',
-                   database = './eileen.chatterbot.database.json',
+                   storage_adapter = 'chatterbot.adapters.storage.JsonFileStorageAdapter',
+                   database = '../eileen.chatterbot.database.json',
 
 
                    # I/O Adapter init
 
-                   input_adapter = 'chatterbot.adapters.input.terminal',
-                   output_adapter = 'chatterbot.adapters.output.terminal',
+                   input_adapter = 'chatterbot.adapters.input.TerminalAdapter',
+                   output_adapter = 'chatterbot.adapters.output.TerminalAdapter',
 
                    # Logic Adapter init
                    logic_adapters = [
-                                    'chatterbot.adapter.logic.mathematical_evaluation'
-                                    'chatterbot.adapter.logic.time_adapter'
+                                    'chatterbot.adapters.logic.MathematicalEvaluation',
+#                                    'chatterbot.adapters.logic.TimeLogicAdapter'
                                     ]
 
                  )
@@ -39,8 +39,8 @@ chatbot = ChatBot(
 ######### eileen.chatbot = ChatBot('Eileen')
 ######### eileen.chatbot.getresponse()
 
-def get_response():
-  response = chatbot.getresponse()
+def print_response():
+  response = chatbot.get_response(None)
   return response
 
 
@@ -48,8 +48,8 @@ def get_response():
 
 
 # Pre-Main Print
-print('Eileen was told "Hello!"')
-chatbot.getresponse('Hello!')
+print('Please tell Eileen "Hello!"')
+#chatbot.get_response(None)
 
 # Main Loop
 
@@ -60,8 +60,7 @@ while True:
 
     # Some garbage test code
     # Eileen v 0.0.1; I guess...
-    response = get_response()
-    print response
+    print_response()
 
-  except(KeyboardInterupt, EOFError, SystemExit):
+  except(KeyboardInterrupt, EOFError, SystemExit):
     break
