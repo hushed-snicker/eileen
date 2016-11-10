@@ -1,0 +1,1 @@
+Build a bot that responds to commands with a command token in front of them. Expand said bot to have a modular expansion system. Build modules to hook into chatterbot with
