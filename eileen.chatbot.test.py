@@ -25,13 +25,13 @@ chatbot = ChatBot(
 
                    # Logic Adapter init
                    logic_adapters = [
+                                    'chatterbot.adapters.logic.MultiLogicAdapter',
+                                    'chatterbot.adapters.logic.ApproximateSentenceMatchAdapter',
+## Responds with "Can I borrow a cup of sugar                                    'chatterbot.adapters.logic.SentimentAdapter',
+                                    'chatterbot.adapters.logic.ClosestMeaningAdapter',
+                                    'chatterbot.adapters.logic.ClosestMatchAdapter',
                                     'chatterbot.adapters.logic.MathematicalEvaluation',
-                                    'chatterbot.adapters.logic.TimeLogicAdapter',
-##                                    'chatterbot.adapters.logic.ApproximateSentenceMatchAdapter',  # Missing english stopwords corpus
-##                                    'chatterbot.adapters.logic.ClosestMeaningAdapter',            # Missing english stopwords corpus
-##                                    'chatterbot.adapters.logic.MultiLogicAdapter',                # Not sure if needed. Crashes with an error when used
-##                                    'chatterbot.adapters.logic.SentimentAdapter',                 # Makes her only respond with, "Can I have a cup of sugar?"
-                                    'chatterbot.adapters.logic.ClosestMatchAdapter'
+                                    'chatterbot.adapters.logic.TimeLogicAdapter'
                                     ]
 
                  )
